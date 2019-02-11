@@ -60,6 +60,9 @@ main {
 img {
     max-width: 100%;
 }
+h2 {
+    padding: 1em 2rem .4em;
+}
 p {
     padding: 0 2em;
     margin-bottom: 1em;
@@ -67,6 +70,12 @@ p {
         color: $orange;
         text-decoration: underline;
     }
+}
+main ul {
+    list-style: none;
+}
+main li {
+    padding: 0 2em .4em;
 }
 .grid {
     width: 100%;
@@ -89,7 +98,8 @@ p {
         text-align: center;
         font-weight: 900;
         text-transform: uppercase;
-
+        margin-bottom: 0;
+        padding: 0;
     }
     hr {
         width: calc(100% - 2em);
