@@ -1,7 +1,7 @@
 $yellow: #fff200;
 $orange: #fcb040;
 $robotoMono: 'Roboto Mono', monospace;
-$allerta: 'Allerta', sans-serif;
+$allerta: 'Allerta Stencil', sans-serif;
 $roboto: 'Roboto', sans-serif;
 
 .allerta {
@@ -33,7 +33,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid $orange;
 }
 header section {
     max-width: 600px;
@@ -54,6 +54,22 @@ h1 span {
     line-height: 60px;
     transform: translateY(-40%);
 }
+@media only screen and (min-width: 550px) {
+    .lrg {
+        display: none;
+    }
+}
+@media only screen and (max-width: 549px) {
+    .sml {
+        display: none;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .sml, .all {
+        display: none;
+    }
+}
+
 nav {
     position: absolute;
     right: 0.5em;
