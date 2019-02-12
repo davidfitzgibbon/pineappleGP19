@@ -108,7 +108,9 @@ h2 {
 p {
     padding: 0;
     margin-bottom: 1em;
-    a {
+    a,
+    a:visited,
+    a:focus {
         color: $orange;
         text-decoration: underline;
     }
